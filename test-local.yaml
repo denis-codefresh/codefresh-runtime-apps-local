@@ -14,7 +14,7 @@ spec:
     targetRevision: HEAD
   destination:
     name: in-cluster
-    namespace: eti-local-runtime
+    namespace: eti-local-runtime0105
   syncPolicy:
     automated:
       prune: false
