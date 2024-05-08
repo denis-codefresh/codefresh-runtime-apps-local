@@ -9,8 +9,8 @@ metadata:
 spec:
   project: default
   source:
-    path: resources
-    repoURL: https://github.com/eti-codefresh/guestbook-local.git
+    path: manifests/trio-app/aperture-dev
+    repoURL: https://github.com/aperture-sci/DevOps
     targetRevision: main
   destination:
     name: in-cluster
