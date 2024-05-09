@@ -9,12 +9,12 @@ metadata:
 spec:
   project: default
   source:
-    path: manifests/trio-app/aperture-dev
-    repoURL: https://github.com/aperture-sci/DevOps
+    path: resources
+    repoURL: https://github.com/denis-codefresh/guestbook-local
     targetRevision: main
   destination:
     name: in-cluster
-    namespace: eti-local-runtime0105
+    namespace: test
   syncPolicy:
     automated:
       prune: false
@@ -25,7 +25,7 @@ spec:
       - Replace=false
       - PruneLast=false
       - Validate=true
-      - CreateNamespace=false
+      - CreateNamespace=true
       - ApplyOutOfSyncOnly=false
       - ServerSideApply=true
       - RespectIgnoreDifferences=false
