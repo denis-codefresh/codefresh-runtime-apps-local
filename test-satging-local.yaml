@@ -10,11 +10,11 @@ spec:
   project: default
   source:
     path: resources-staging
-    repoURL: https://github.com/eti-codefresh/guestbook-local.git
+    repoURL: https://github.com/denis-codefresh/guestbook-local
     targetRevision: HEAD
   destination:
     name: in-cluster
-    namespace: staging
+    namespace: test-staging
   syncPolicy:
     automated:
       prune: true
